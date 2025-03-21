@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:url(https://as2.ftcdn.net/v2/jpg/06/26/51/97/1000_F_626519793_fS1PlWJeXNbEwmwS3Yk8SS9BpLzdl4uR.jpg)no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center
+        }
+        .form-container {
+            width: 50%;
+            margin:  auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius:5px;
+            background:grey;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background-color: #007BFF;
+            color: black;
+            padding: 10px;
+            border:auto;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="service">Preferred Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="web_design">Web Design</option>
+                <option value="seo">SEO</option>
+                <option value="marketing">Digital Marketing</option>
+            </select>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <label for="receipt">Upload Receipt (Recent image only):</label>
+            <input type="file" id="receipt" name="receipt"
